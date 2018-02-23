@@ -15,13 +15,13 @@ module.exports.routes = {
   '/register': {
     view: 'register'
   },
-  '/login': {
+  'GET /login': {
     view: 'login'
   },
-  
+
   /******* UserController Routes *******/
   'POST /login': 'UserController.login',
-  '/home/:uname': 'UserController.userHome',
+  '/home/:uname': 'UserController.userHomepage',
   
   /******* TweetController Routes *******/
   'POST /addTweet': 'TweetController.addTweet',

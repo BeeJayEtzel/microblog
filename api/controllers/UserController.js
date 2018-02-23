@@ -81,7 +81,7 @@ module.exports = {
             }
             else if (userFound == null) {
                 return res.redirect('/login', {
-                    error: "Incorrect username/password combination";
+                    error: "Incorrect username/password combination"
                 });
             }
             else {

@@ -15,7 +15,7 @@ module.exports = {
         var tweet = req.body.message;
         var usr = req.session.userId;
         
-        Tweet.create.({
+        Tweet.create({
             post: tweet,
             user: usr
         }).exec(function(err) {
