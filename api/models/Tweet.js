@@ -7,10 +7,13 @@
 module.exports = {
 
   attributes: {
-    post: {
+    raw_tweet: {
       type: 'string',
       size: 140,
       required: true
+    },
+    tweet: {
+      type: 'text',
     },
     likes: {
       type: 'integer',
